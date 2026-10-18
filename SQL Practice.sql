@@ -19,7 +19,7 @@ INSERT INTO myfirstproject(first_name, last_name, department, salary, joining_da
 				  ('Saakib','Bhat', 'IT','60000.00','2022-05-01',29),
 				  ('Amir','Dar','HR','55000.00','2021-08-15',32),
 				  ('Umer', 'Hamid','Finance','70000.00','2020-03-15',35),
-				  ('Jaffer','Mir','IT','65000.00','2029-11-22',28),
+				  ('Jaffer','Mir','IT','65000.00','2022-11-22',28),
 				  ('Imad','Khan','Opertions','50000.00','2023-01-10',26);
 
 
@@ -64,13 +64,6 @@ SELECT * FROM myfirstproject ORDER BY employee_id ASC;
 
  ALTER TABLE myfirstproject
  ALTER COLUMN salary TYPE INT;
-
-
-ALTER TABLE myfirstproject
-ALTER COLUMN salary TYPE NUMERIC;
-
-ALTER TABLE myfirstproject
-ALTER COLUMN salary TYPE INT;
  
 SELECT * FROM myfirstproject ORDER BY employee_id ASC;
 
@@ -81,7 +74,7 @@ SELECT first_name, last_name , age , salary FROM myfirstproject
 ORDER BY salary DESC;
 
 --9 Insert a new Employee 
-INSERT INTO myfirstproject (first_name,last_name, dept_name, salary, joining_date, age)
+INSERT INTO myfirstproject (first_name,last_name, department, salary, joining_date, age)
        VALUES
 	   ('Zaid','Nabi','Marketing','60000','2023-09-15',30);
 
